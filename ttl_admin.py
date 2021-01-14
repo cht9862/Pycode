@@ -49,4 +49,11 @@ class After_server:
     def __init__(self):
         pass
 
-    def
+    def tui(self):
+        pass
+
+    def huan(self):
+        pass
+
+    def tui_money(self):
+        pass
