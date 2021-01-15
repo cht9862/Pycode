@@ -1,4 +1,5 @@
 # coding=utf-8
+import ttl_data
 
 class Admin_Entrance:
 
@@ -24,7 +25,7 @@ class Admin_Entrance:
         print(result)
 
 
-class Position:
+class Adduser:
     '''
     管理会员和超市职员
     主要功能： 修改人员的相关信息
@@ -33,8 +34,9 @@ class Position:
     def  __init__(self):
         pass
 
-    def shop_vip(self):
-        pass
+    def add_user(self, vla):
+        self.adduser = ttl_data.UserVip(vla)
+        self.adduser.set_user()
 
     def shop_staff(self):
         pass
@@ -57,3 +59,9 @@ class After_server:
 
     def tui_money(self):
         pass
+
+
+for i in range(100):
+    a = {i: ['wo', 12, 123826485]}
+    test = Adduser()
+    test.add_user(a)
